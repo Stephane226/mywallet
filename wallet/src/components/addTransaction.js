@@ -1,22 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function AddTransaction(){
+
+    const [text, setText] = useState("");
+    const [amount, setAmount] = useState("");
+
   return (
    <>
     <h3>Add new transaction</h3>
       <form >
-        <div class="form-control">
+        <div className="form-control">
           <label for="text">Text</label>
-          <input type="text"  placeholder="Enter text..." />
+          <input type="text" value={text}  onChange={(e)=>setText(e.target.value)} placeholder="Enter text..." />
         </div>
-        <div class="form-control">
+        <div className="form-control">
           <label for="amount"
             >Amount <br />
             (negative - expense, positive - income)</label
           >
-          <input type="number"  placeholder="Enter amount..." />
+          <input type="number"  value={amount}  onChange={(e)=>setAmount(e.target.value)} placeholder="Enter amount..." />
         </div>
-        <button class="btn">Add transaction</button>
+        <button className="btn">Add transaction</button>
       </form>
    </>
   )
