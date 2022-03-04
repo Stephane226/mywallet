@@ -5,4 +5,4 @@ download it and run in the terminal <br>
  -cd wallet <br> 
  -npm start <br>
 
-![masaaki-stephane-github](https://user-images.githubusercontent.com/62558026/156833888-3b6910fa-4a57-4556-9fcb-259f9d3ec48f.png)
+![Ekran Görüntüsü (132)](https://user-images.githubusercontent.com/62558026/156837411-d3558b43-bd22-4b2f-983b-2d13ec95b844.png)
